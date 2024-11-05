@@ -6,6 +6,7 @@ import Image from "next/image";
 import HomeAnime from "@/server/api";
 
 const App = () => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const [isData, setData] = useState<any[]>();
     const getAnime = async () => {
       const res = await HomeAnime();
