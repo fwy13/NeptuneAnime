@@ -4,6 +4,7 @@ import { cutHttpAndHostName } from "@/utils/cutHttpAndHostName";
 
 const getHotAnime = (html: string) => {
     const $ = Cheerio.load(html);
+    const message = "Hello world"
     const listRecommend: AnimeRecommend[] = [];
     const newUpdate: AnimeRecommend[] = [];
     const commingSoon: AnimeRecommend[] = [];
@@ -68,6 +69,7 @@ const getHotAnime = (html: string) => {
         });
 
     return {
+        message,
         listRecommend,
         commingSoon,
         newUpdate,

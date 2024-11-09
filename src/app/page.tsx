@@ -10,6 +10,7 @@ const App = () => {
     const [isData, setData] = useState<any[]>();
     const getAnime = async () => {
       const res = await HomeAnime();
+      console.log(res.data.message);
       setData(res.data.newUpdate);
     };
     useEffect(() => {
